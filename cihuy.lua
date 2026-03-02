@@ -135,5 +135,5 @@ _G.FishItConfig = _G.FishItConfig or {
 
     ["AutoReconnect"] = true,
     ["HideGUI"] = false,
-    ["EXIT_MAP_IF_DISCONNECT"] = true,
+    ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
