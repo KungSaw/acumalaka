@@ -2,7 +2,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/he
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = false,
-        ["Random Result"] = false,
+        ["Random Result"] = true,
 
         ["Auto Favorite"] = true,
         ["Auto Unfavorite"] = false,
@@ -107,9 +107,9 @@ _G.FishItConfig = _G.FishItConfig or {
             "Midnight Bait",
             "Chroma Bait",
             "Corrupt Bait",
-            "Singularity Bait",
+            "Floral Bait",
         },
-        ["Endgame"] = "Singularity Bait",
+        ["Endgame"] = "Floral Bait",
     },
     ["Rod List"] = {
         ["Auto Buying"] = true,
