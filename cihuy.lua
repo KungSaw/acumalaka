@@ -11,7 +11,7 @@ _G.FishItConfig = _G.FishItConfig or {
         },
 
         ["Auto Accept Trade"] = true,
-        ["Auto Friend Request"] = true,
+        ["Auto Friend Request"] = false,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
@@ -33,7 +33,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 30,
+        ["Auto Sell Every"] = 100,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
@@ -71,8 +71,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            ["Mutation Totem"] = 5,
-            "Mutation Totem",
+            ["Mutation Totem"] = 10,
         },
     },
     ["Event"] = {
@@ -93,11 +92,13 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Allowed Sacrifice"] = {
             "Frostborn Shark",
             "Cryoshade Glider",
+            "Giant Squid",
+            "Panther Eel",
         },
         ["Second Enchant List"] = {
-            "Reeler I",
-            "Prismatic I",
-            "Mutation Hunter II",
+            "Cursed I",
+            "Perfection",
+            "Empowered I",
         },
         ["Minimum Rod"] = "Ghostfinn Rod",
     },
@@ -106,8 +107,8 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Buy List"] = {
             "Midnight Bait",
             "Chroma Bait",
-            "Corrupt Bait",
             "Floral Bait",
+            "Singularity Bait",
         },
         ["Endgame"] = "Floral Bait",
     },
