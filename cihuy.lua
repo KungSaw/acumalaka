@@ -68,7 +68,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Astral Rod",
     },
     ["Totems"] = {
-        ["Auto Use"] = false,
+        ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
             ["Mutation Totem"] = 10,
@@ -124,9 +124,9 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
             ["Treasure Room"] = {"Ares Rod", "Astral Rod"},
-            ["Crystal Depths"] = {"Element Rod", "Ghostfinn Rod"},
+            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
         },
-        ["Endgame"] = "",
+        ["Endgame"] = "Treasure Room",
     },
 
     ["ExtremeFpsBoost"] = false,
