@@ -52,7 +52,7 @@ getgenv().AutoTradeConfig = {
         "Aura Crate",
         "Cosmetic Crate",
         "Trait Reroll",
-        "Upper Sigil",
+        "Upper Seal",
     },
 }
 
