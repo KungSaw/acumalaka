@@ -43,7 +43,7 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
 -- CONFIG 2 (Auto Trade)
 getgenv().AutoTradeConfig = {
     MainAccounts = {
-        "DriftOrbitStorm2009",
+        "mrrpacman",
     },
     Items = {
         "Race Reroll",
