@@ -12,7 +12,7 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
     Performance = {
         AutoRejoinIfHighRam = 5000,
         WebhookURL      = "",
-        FPSBoost        = false,
+        FPSBoost        = true,
         FPSLock         = 10,
     },
     SkillTree = {
