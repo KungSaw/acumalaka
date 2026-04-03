@@ -33,7 +33,7 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
         AutoEquip = true,
         AutoUpgrade = true,
         AutoDeleteTrash = true,
-        UpgradeSet = {"Celestial Rupture"},
+        UpgradeSet = {"Abyssal Crown Set"},
         UpgradeStopAt = 15,
         TrashRarities = {"Common", "Rare", "Epic"},
     },
