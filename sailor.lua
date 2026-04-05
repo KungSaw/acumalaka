@@ -21,7 +21,7 @@ end)
 task.spawn(function()
     while true do
         local success, err = pcall(function()
-            LOADSTRING TRACKSTAT KAMU TAROK DISINI
+            loadstring(game:HttpGet("https://siganteng.store/api/script/u/ft_OAxXqM8qa9PTZ0SBJeSopwBjn14u4lXWhe_4XeFccIg"))()
         end)
 
         if success then 
