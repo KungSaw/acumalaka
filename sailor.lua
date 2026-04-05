@@ -1,20 +1,17 @@
--- Eksekusi Script 1 (Luarmor) di jalurnya sendiri
 task.spawn(function()
-    script_key = "xqImXRGIJbTKjNrfBjHmecAFzIgZTDiV" -- Masukkan key kamu di dalam tanda kutip jika masih dibutuhkan
+ script_key="xqImXRGIJbTKjNrfBjHmecAFzIgZTDiV";
+getgenv().SailorVIP = {
+    Optimization = {
+        Enable = true, -- On/Off toàn bộ optimization script
+        FPSCap = 10, -- Số FPS cần lock (ví dụ: 10, 15, 30, 60)
+    },
 
-    getgenv().SailorVIP = {
-        Optimization = {
-            Enable = true, -- On/Off seluruh script optimisasi
-            FPSCap = 10,   -- Batasan FPS (contoh: 10, 15, 30, 60)
-        },
-
-        Webhook = {
-            Enable = false, -- On/Off pengiriman webhook notifikasi
-            URL = "", -- URL Webhook milikmu
-        },
-    }
-
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/a8255d759144bb6127c5b72221cce5cd.lua"))()
+    Webhook = {
+        Enable = true, -- On/Off gửi webhook thông báo crate
+        URL = "", 
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/a8255d759144bb6127c5b72221cce5cd.lua"))()
 end)
 
 -- Eksekusi Script 2 (Siganteng) dengan sistem Auto-Retry
