@@ -43,7 +43,7 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
 task.spawn(function()
     while true do
         local success, err = pcall(function()
-            loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1169527463a6fb002d07c345110bc0aa.lua"))()
+            loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/a8255d759144bb6127c5b72221cce5cd.lua"))()
         end)
         if success then break end
         warn("Luarmor Error: " .. tostring(err))
