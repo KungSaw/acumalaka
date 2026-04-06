@@ -7,7 +7,7 @@ getgenv().SailorVIP = {
     },
 
     Webhook = {
-        Enable = true, -- On/Off gửi webhook thông báo crate
+        Enable = false, -- On/Off gửi webhook thông báo crate
         URL = "", 
     },
 }
