@@ -7,7 +7,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Favorite"] = true,
         ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
-            {Name = "Eggy Enchant Stone", Variant = ""},
+            {Name = "Ruby", Variant = "Gemstone"},
         },
 
         ["Auto Accept Trade"] = true,
@@ -17,7 +17,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Enabled"] = true,
         ["Whitelist Username"] = {"mrrpacman"},
         ["Category Fish"] = {
-            "Secret",
+            "",
         },
         ["Fish Name"] = {
             {Name = "Ruby", Variant = "Gemstone"},
