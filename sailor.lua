@@ -17,13 +17,13 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Enabled"] = true,
         ["Whitelist Username"] = {"pepelcantik2"},
         ["Category Fish"] = {
-            "Secret",
+            "",
         },
         ["Fish Name"] = {
             {Name = "Ruby", Variant = "Gemstone"},
         },
         ["Item Name"] = {
-            "Evolved Enchant Stone",
+            "Eggy Enchant Stone",
         },
     },
     ["Farm Coin Only"] = {
@@ -68,7 +68,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Astral Rod",
     },
     ["Totems"] = {
-        ["Auto Use"] = true,
+        ["Auto Use"] = false,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
             ["Mutation Totem"] = 10,
@@ -124,9 +124,9 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
             ["Treasure Room"] = {"Ares Rod", "Astral Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
+            ["Easter Cave"] = {"Element Rod", "Ghostfinn Rod"},
         },
-        ["Endgame"] = "Treasure Room",
+        ["Endgame"] = "",
     },
 
     ["ExtremeFpsBoost"] = false,
