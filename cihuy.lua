@@ -7,7 +7,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Favorite"] = true,
         ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
-            {Name = "Ruby", Variant = "Gemstone"},
+            {Name = "Eggy Enchant Stone", Variant = ""},
         },
 
         ["Auto Accept Trade"] = true,
@@ -32,7 +32,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Selling"] = {
         ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Legendary",
+        ["Auto Sell Threshold"] = "Mythic",
         ["Auto Sell Every"] = 50,
     },
     ["Doing Quest"] = {
