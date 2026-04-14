@@ -12,6 +12,8 @@ _G.FishItConfig = _G.FishItConfig or {
 
         ["Auto Accept Trade"] = true,
         ["Auto Friend Request"] = false,
+
+        ["Auto Egg Exchange"] = false,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
