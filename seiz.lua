@@ -17,13 +17,12 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Enabled"] = true,
         ["Whitelist Username"] = {"graceneonmagic89"},
         ["Category Fish"] = {
-            "Secret",
+            "",
         },
         ["Fish Name"] = {
             {Name = "Ruby", Variant = "Gemstone"},
         },
         ["Item Name"] = {
-            "Evolved Enchant Stone",
             "Eggy Enchant Stone",
         },
     },
@@ -125,9 +124,9 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
             ["Treasure Room"] = {"Ares Rod", "Astral Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
+            ["Ancient Ruin"] = {"Element Rod", "Ghostfinn Rod"},
         },
-        ["Endgame"] = "Treasure Room",
+        ["Endgame"] = "",
     },
 
     ["ExtremeFpsBoost"] = false,
