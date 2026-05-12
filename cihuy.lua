@@ -23,7 +23,7 @@ _G.FishItConfig = _G.FishItConfig or {
             {Name = "Ruby", Variant = "Gemstone"},
         },
         ["Item Name"] = {
-            "Evolved Enchant Stone",
+            "Runic Enchant Stone",
             "Eggy Enchant Stone",
         },
     },
@@ -125,9 +125,9 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
             ["Treasure Room"] = {"Ares Rod", "Astral Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
+            ["Underwater City"] = {"Element Rod", "Ghostfinn Rod"},
         },
-        ["Endgame"] = "Treasure Room",
+        ["Endgame"] = "",
     },
 
     ["ExtremeFpsBoost"] = false,
