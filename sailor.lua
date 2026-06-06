@@ -1,5 +1,3 @@
-
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/heads/main/game"))()
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
@@ -11,35 +9,37 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
-            {Name = "Eggy Enchant Stone", Variant = ""},
+            -- {Variant = "Leviathan Rage"}, -- Variant Only
+            -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
 
         ["Auto Accept Trade"] = true,
-        ["Auto Friend Request"] = false,
-        ["Auto Egg Exchange"] = false,
+        ["Auto Friend Request"] = true,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
-        ["Whitelist Username"] = {"evelynclara22", "mrrpacman", "clarabelle730", "bontotevelyn", "ELxSaveSaw", "graceneonmagic89"},
+        ["Whitelist Username"] ={"evelynclara22", "mrrpacman", "clarabelle730", "bontotevelyn", "ELxSaveSaw", "graceneonmagic89"},
         ["Category Fish"] = {
             "Secret",
+            -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
+            "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
+            -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
         ["Item Name"] = {
-            "Evolved Enchant Stone",
-            "Eggy Enchant Stone",
+            "Evolved Enchant Stone", "Runic Enchant Stone",
         },
     },
     ["Farm Coin Only"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = false, -- Farm coins only [ cant buy rod, bait, enchant, weather ]
         ["Target"] = 190000,
     },
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 50,
+        ["Auto Sell Every"] = 20,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
@@ -48,36 +48,37 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Diamond Rod"] = false,
         ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
-            "King Crab",
-            "Queen Crab",
-            "Bone Whale",
             "Gladiator Shark",
-            "King Jelly",
+            "Cryoshade Glider",
             "Mosasaur Shark",
+            "Queen Crab",
+            "King Crab",
+            "Giant Squid",
+            "King Jelly",
+
+
         },
         ["FARM_LOC_SECRET_SACRIFICE"] = "Treasure Room",
 
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-    ["Auto Sending"] = true,
-    ["Category"] = {
-        "Secret",
-        {Name = "Ruby", Variant = "Gemstone"},
-    },
-    ["Item Name"] = {
-        "Evolved Enchant Stone",
-    },
-    ["Link Webhook"] = "",
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1472600840018596005/CwgnFtj19DNKVNus0Rkg5ybzUKET4cObpaUFHDpxFkbu2qUK9ugj08BdEoBEUcABpF6i",
+        ["Auto Sending"] = true,
+        ["Category"] = {
+            "Secret",
+            {Name = "Ruby", Variant = "Gemstone"},
+        },
+        ["Item Name"] = {},
+        ["Link Webhook"] = "",
+        ["Link Webhook Quest Complete"] = "",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,
         ["Minimum Rod"] = "Astral Rod",
         ["Weather List"] = {
             "Wind",
-            "Cloudy",
             "Storm",
+
         },
     },
     ["Potions"] = {
@@ -88,8 +89,9 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            ["Mutation Totem"] = 100,
-            "Mutation Totem",
+            ["Mutation Totem"] = 50,
+            "Luck Totem",
+            "Shiny Totem",
         },
     },
     ["Event"] = {
@@ -97,30 +99,35 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Element Rod",
         ["Event List"] = {
             "Megalodon Hunt",
+           
+            
+            
+            
         },
     },
     ["Enchant"] = {
-        ["Auto Enchant"] = false,
+        ["Auto Enchant"] = true,
         ["Roll Enchant"] = false,
-        ["Evolved Roll Enchant"] = false,
+        ["Evolved Roll Enchant"] = true,
         ["Enchant List"] = {
-            "Reeler II",
-            "Reeler I",
-            "Empowered I",
             "SECRET Hunter",
+            
+          
+           
+           
+            
+       
         },
-        ["Second Enchant"] = false,
+        ["Second Enchant"] = true,
         ["Allowed Sacrifice"] = {
-            "Cryoshade Glider",
-            "Giant Squid",
-            "Panther Eel",
             "King Crab",
             "Queen Crab",
+
         },
         ["Second Enchant List"] = {
-            "Perfection",
-            "Reeler I",
-            "Empowered I",
+            "Reeler l",
+            
+            
         },
         ["Minimum Rod"] = "Element Rod",
     },
@@ -128,11 +135,12 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Buying"] = true,
         ["Buy List"] = {
             "Midnight Bait",
-            "Chroma Bait",
-            "Floral Bait",
+            "Corrupt Bait",
+            "Aether Bait",
             "Singularity Bait",
+            
         },
-        ["Endgame"] = "Floral Bait",
+        ["Endgame"] = "Singularity Bait",
     },
     ["Rod List"] = {
         ["Auto Buying"] = true,
@@ -141,21 +149,25 @@ _G.FishItConfig = _G.FishItConfig or {
             "Midnight Rod",
             "Astral Rod",
             "Ares Rod",
+            
         },
         ["Location Rods"] = {
             ["Fisherman Island"] = {"Starter Rod"},
-            ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod", "Ares Rod", "Astral Rod"},
+            ["Tropical Grove"] = {"Grass Rod", "Midnight Rod", "Astral Rod"},
+            ["Underwater City"] = {"Ghostfinn Rod", "Element Rod", "Diamond Rod"},
+            
         },
         ["Endgame"] = "",
     },
 
     ["ExtremeFpsBoost"] = false,
-    ["UltimatePerformance"] = true,
-    ["Disable3DRender"] = true,
+    ["UltimatePerformance"] = false,
+    ["Disable3DRender"] = false,
     ["AutoRemovePlayer"] = true,
 
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
-    ["EXIT_MAP_IF_DISCONNECT"] = true,
+    ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
+
+local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()
