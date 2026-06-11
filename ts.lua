@@ -175,79 +175,90 @@ local function scanGlobals()
 end
 
 -- ============================================
--- MASTER DISCOVERY (run once, print everything)
+-- MASTER DISCOVERY (run once, print everything + save to file)
 -- ============================================
+local discoveryLog = {}
+local function dprint(msg)
+    print(msg)
+    discoveryLog[#discoveryLog + 1] = msg
+end
+
 local function runDiscovery()
-    print("\n[Kungsaw] ========== DISCOVERY v3 ==========")
+    dprint("\n[Kungsaw] ========== DISCOVERY v3 ==========")
     
     -- ValueBases
-    print("\n[Kungsaw] --- VALUE BASES (keyword matches) ---")
+    dprint("\n[Kungsaw] --- VALUE BASES (keyword matches) ---")
     local values = scanValueBases()
     local keywords = {"enchant", "secret", "ghost", "element", "diamond", "runic", "fish", "rod", "stone", "evolved", "inventory", "item", "catch", "rare", "legend", "mythic", "tier"}
     local valueMatches = 0
     for _, entry in pairs(values) do
         for _, kw in pairs(keywords) do
             if entry.name:find(kw) then
-                print("[Kungsaw] VALUE: " .. entry.path .. " = " .. tostring(entry.value))
+                dprint("[Kungsaw] VALUE: " .. entry.path .. " = " .. tostring(entry.value))
                 valueMatches = valueMatches + 1
                 break
             end
         end
     end
-    print("[Kungsaw] Total value matches: " .. valueMatches .. " (scanned " .. #values .. " total)")
+    dprint("[Kungsaw] Total value matches: " .. valueMatches .. " (scanned " .. #values .. " total)")
     
     -- Backpack/Tools
-    print("\n[Kungsaw] --- BACKPACK TOOLS ---")
+    dprint("\n[Kungsaw] --- BACKPACK TOOLS ---")
     local rods = scanBackpack()
     for _, rod in pairs(rods) do
-        print("[Kungsaw] TOOL: " .. rod.fullName .. " @ " .. rod.path)
+        dprint("[Kungsaw] TOOL: " .. rod.fullName .. " @ " .. rod.path)
     end
-    print("[Kungsaw] Total tools: " .. #rods)
+    dprint("[Kungsaw] Total tools: " .. #rods)
     
     -- PlayerGui text with keywords
-    print("\n[Kungsaw] --- PLAYERGUI TEXTS (keyword matches) ---")
+    dprint("\n[Kungsaw] --- PLAYERGUI TEXTS (keyword matches) ---")
     local guiTexts = scanPlayerGui()
     local guiMatches = 0
     for _, entry in pairs(guiTexts) do
         local searchIn = entry.name .. " " .. entry.parentName .. " " .. entry.grandParentName .. " " .. entry.text:lower()
         for _, kw in pairs(keywords) do
             if searchIn:find(kw) then
-                print("[Kungsaw] GUI: " .. entry.path .. " | Name=" .. entry.name .. " | Text='" .. entry.text:sub(1, 50) .. "'")
+                dprint("[Kungsaw] GUI: " .. entry.path .. " | Name=" .. entry.name .. " | Text='" .. entry.text:sub(1, 50) .. "'")
                 guiMatches = guiMatches + 1
                 break
             end
         end
     end
-    print("[Kungsaw] Total GUI matches: " .. guiMatches .. " (scanned " .. #guiTexts .. " total)")
+    dprint("[Kungsaw] Total GUI matches: " .. guiMatches .. " (scanned " .. #guiTexts .. " total)")
     
     -- Modules
-    print("\n[Kungsaw] --- MODULESCRIPTS (interesting) ---")
+    dprint("\n[Kungsaw] --- MODULESCRIPTS (interesting) ---")
     local modules = tryRequireModules()
     for _, m in pairs(modules) do
-        print("[Kungsaw] MODULE: " .. m.path)
+        dprint("[Kungsaw] MODULE: " .. m.path)
     end
     
     -- Globals
-    print("\n[Kungsaw] --- GLOBALS ---")
+    dprint("\n[Kungsaw] --- GLOBALS ---")
     local globals = scanGlobals()
     for _, g in pairs(globals) do
-        print("[Kungsaw] GLOBAL: " .. g.key .. " [" .. g.type .. "]" .. (g.value and (" = " .. g.value) or ""))
+        dprint("[Kungsaw] GLOBAL: " .. g.key .. " [" .. g.type .. "]" .. (g.value and (" = " .. g.value) or ""))
     end
     
     -- Player direct children structure
-    print("\n[Kungsaw] --- PLAYER CHILDREN ---")
+    dprint("\n[Kungsaw] --- PLAYER CHILDREN ---")
     for _, child in pairs(LocalPlayer:GetChildren()) do
-        print("[Kungsaw] " .. child.Name .. " [" .. child.ClassName .. "] (" .. #child:GetChildren() .. " children)")
+        dprint("[Kungsaw] " .. child.Name .. " [" .. child.ClassName .. "] (" .. #child:GetChildren() .. " children)")
     end
     
     -- ReplicatedStorage top-level
-    print("\n[Kungsaw] --- REPLICATED STORAGE TOP ---")
+    dprint("\n[Kungsaw] --- REPLICATED STORAGE TOP ---")
     for _, child in pairs(ReplicatedStorage:GetChildren()) do
-        print("[Kungsaw] RS: " .. child.Name .. " [" .. child.ClassName .. "] (" .. #child:GetChildren() .. " children)")
+        dprint("[Kungsaw] RS: " .. child.Name .. " [" .. child.ClassName .. "] (" .. #child:GetChildren() .. " children)")
     end
     
-    print("\n[Kungsaw] ========== END DISCOVERY ==========")
-    print("[Kungsaw] PASTE THE OUTPUT ABOVE TO FIX TRACKER")
+    dprint("\n[Kungsaw] ========== END DISCOVERY ==========")
+    
+    -- Save to file
+    pcall(function()
+        writefile("discovery.txt", table.concat(discoveryLog, "\n"))
+        print("[Kungsaw] Discovery saved to Workspace/discovery.txt")
+    end)
 end
 
 -- ============================================
