@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/heads/main/game"))()
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = false,
@@ -18,13 +17,13 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
-        ["Whitelist Username"] ={"evelynclara22", "mrrpacman", "clarabelle730", "bontotevelyn", "ELxSaveSaw", "graceneonmagic89"},
+        ["Whitelist Username"] ={"StormChaserRePlayzD1", "RuneqePhoenixg146496", "Xz_HuntergeRocket6eC", "H0ll0w8MMagicj1878", "VortexHgZeroG126794", "SwitchpvZoomV1792", "XzRiftdAOblivion9zX1", "LegendKcClawG1140", "KingTVBlad3t1958", "XzByte7XBladeOzX1961"},
         ["Category Fish"] = {
             "Secret",
             -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
-            "Sacred Guardian Squid",
+           
             {Name = "Ruby", Variant = "Gemstone"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
@@ -39,7 +38,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 20,
+        ["Auto Sell Every"] = 100,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
@@ -89,9 +88,9 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            ["Mutation Totem"] = 50,
-            "Luck Totem",
-            "Shiny Totem",
+            ["Luck Totem"] = 1000,
+            
+            
         },
     },
     ["Event"] = {
@@ -109,6 +108,8 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Enchant"] = true,
         ["Roll Enchant"] = false,
         ["Evolved Roll Enchant"] = true,
+        ["Farm Until Enchant"] = true,
+        ["Enchant After X Stone"] = 25,
         ["Enchant List"] = {
             "SECRET Hunter",
             
@@ -118,7 +119,7 @@ _G.FishItConfig = _G.FishItConfig or {
             
        
         },
-        ["Second Enchant"] = true,
+        ["Second Enchant"] = false,
         ["Allowed Sacrifice"] = {
             "King Crab",
             "Queen Crab",
@@ -169,5 +170,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["HideGUI"] = false,
     ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
+
+script_key="CBF8AE2FFFE0CD4FA0E654BA31B72774";
 
 local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()
