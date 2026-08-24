@@ -1,162 +1,94 @@
+getgenv().ATConfig = {
+    -- ## General
+    HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
+    MainAccUsername = {
+        "ELxSaveSaw",
+        "evelynclara22",
+        "clarabelle730",
+        "cinderelasaw1",
+        "doktersaw2",
+        "awiu325",
+        "awi4377",
+        "bontotevelyn"
+    },
+    PetsToTrade = {"Crystal Egg"},
+    TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
+    ForceReceiver = false, -- If true, any account the script is executed on will be treated as a receiver
+    PreventGameLoad = false,
+    
+    buyPet = false,
+    PetName = {"Dog", "Cat"}, -- Pet Names to Trade/Buy (priority order: buys all of first pet, then all of second, etc.)
+    Quantity = 0, -- Set to 0 if you want to buy ALL
 
+    buyBoxes = false,
+    boxName = "Kelp Raider Box",
+    openBoxes = true,
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/heads/main/game"))()
-_G.FishItConfig = _G.FishItConfig or {
-    ["Fishing"] = {
-        ["Auto Perfect"] = false,
-        ["Random Result"] = false,
+    transferBait = false,
+    baitName = "Shiver Cone Bait", -- [ Shiver Cone Bait / Subzero Popsicle Bait ]
 
-        ["Auto Favorite"] = true,
-        ["Auto Unfavorite"] = false,
-        ["Fish Name"] = {
-            "Sacred Guardian Squid",
-            {Name = "Ruby", Variant = "Gemstone"},
-            {Name = "Eggy Enchant Stone", Variant = ""},
-        },
+    SmartBuy = false,
 
-        ["Auto Accept Trade"] = true,
-        ["Auto Friend Request"] = false,
-        ["Auto Egg Exchange"] = false,
-    },
-    ["Auto Trade"] = {
-        ["Enabled"] = true,
-        ["Whitelist Username"] = {"evelynclara22", "mrrpacman", "clarabelle730", "bontotevelyn", "ELxSaveSaw", "graceneonmagic89"},
-        ["Category Fish"] = {
-            "Secret",
-        },
-        ["Fish Name"] = {
-            "",
-            {Name = "Ruby", Variant = "Gemstone"},
-        },
-        ["Item Name"] = {
-            "Evolved Enchant Stone",
-            "Eggy Enchant Stone",
-        },
-    },
-    ["Farm Coin Only"] = {
-        ["Enabled"] = false,
-        ["Target"] = 190000,
-    },
-    ["Selling"] = {
-        ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 50,
-    },
-    ["Doing Quest"] = {
-        ["Auto Ghostfinn Rod"] = true,
-        ["Auto Element Rod"] = true,
-        ["Auto Element Rod 2"] = false,
-        ["Auto Diamond Rod"] = false,
-        ["Unlock Ancient Ruin"] = false,
-        ["Allowed Sacrifice"] = {
-            "King Crab",
-            "Queen Crab",
-            "Bone Whale",
-            "Gladiator Shark",
-            "King Jelly",
-            "Mosasaur Shark",
-        },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Treasure Room",
+    AgePets = false,
+    AgeNeons = true, -- Enable if u want to make megas
+    useTinyAgePotion = true,
+    PetsToAge = {"Dog"},
+    autoFuse = true, -- Auto Convert to Neon/Mega
 
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["WebHook"] = {
-    ["Auto Sending"] = true,
-    ["Category"] = {
-        "Secret",
-        {Name = "Ruby", Variant = "Gemstone"},
-    },
-    ["Item Name"] = {
-        "Evolved Enchant Stone",
-    },
-    ["Link Webhook"] = "",
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1472600840018596005/CwgnFtj19DNKVNus0Rkg5ybzUKET4cObpaUFHDpxFkbu2qUK9ugj08BdEoBEUcABpF6i",
-    },
-    ["Weather"] = {
-        ["Auto Buying"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-        ["Weather List"] = {
-            "Wind",
-            "Cloudy",
-            "Storm",
+    TradeTimeout = false, -- If true, closes game if trade is confirming for more than 150 seconds
+
+    AccountFeatures = {
+        ["LeaveServer"] = false, -- Leave server when transfer is completed
+        ["LeaveDelay"] = 120, -- Delay in seconds to wait before leaving
+
+        ["Selected Tool"] = "FarmSync", -- "FarmSync" or "FarmersV5"
+        ["FarmSync"] = {
+            DisableAccount = false,
+            AutoChange = false,
+            StartFolderId = "",
+            EndFolderId = "",
+            ConfigId = ""
         },
-    },
-    ["Potions"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["Totems"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Buy List"] = {
-            ["Mutation Totem"] = 100,
-            "Mutation Totem",
-        },
-    },
-    ["Event"] = {
-        ["Start Farm"] = false,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Event List"] = {
-            "Megalodon Hunt",
-        },
-    },
-    ["Enchant"] = {
-        ["Auto Enchant"] = false,
-        ["Roll Enchant"] = false,
-        ["Evolved Roll Enchant"] = false,
-        ["Enchant List"] = {
-            "Reeler II",
-            "Reeler I",
-            "Empowered I",
-            "SECRET Hunter",
-        },
-        ["Second Enchant"] = false,
-        ["Allowed Sacrifice"] = {
-            "Cryoshade Glider",
-            "Giant Squid",
-            "Panther Eel",
-            "King Crab",
-            "Queen Crab",
-        },
-        ["Second Enchant List"] = {
-            "Perfection",
-            "Reeler I",
-            "Empowered I",
-        },
-        ["Minimum Rod"] = "Element Rod",
-    },
-    ["Bait List"] = {
-        ["Auto Buying"] = true,
-        ["Buy List"] = {
-            "Midnight Bait",
-            "Chroma Bait",
-            "Floral Bait",
-            "Singularity Bait",
-        },
-        ["Endgame"] = "Floral Bait",
-    },
-    ["Rod List"] = {
-        ["Auto Buying"] = true,
-        ["Buy List"] = {
-            "Grass Rod",
-            "Midnight Rod",
-            "Astral Rod",
-            "Ares Rod",
-        },
-        ["Location Rods"] = {
-            ["Fisherman Island"] = {"Starter Rod"},
-            ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod", "Ares Rod", "Astral Rod"},
-        },
-        ["Endgame"] = "",
+        ["FarmersV5"] = {
+            DisableAccount = false,
+            APIKey = "",
+        }
     },
 
-    ["ExtremeFpsBoost"] = false,
-    ["UltimatePerformance"] = true,
-    ["Disable3DRender"] = true,
-    ["AutoRemovePlayer"] = true,
-
-    ["AutoReconnect"] = false,
-    ["HideGUI"] = false,
-    ["EXIT_MAP_IF_DISCONNECT"] = true,
+    -- ### Custom Trade List
+    CustomTradeList = {
+        ["pets"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["food"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["pet_accessories"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["toys"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["transport"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["gifts"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["strollers"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        },
+        ["stickers"] = {
+            ["Trade"] = {},
+            ["Ignore"] = {}
+        }
+    }
 }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/UTILITY_SCRIPT"))()
