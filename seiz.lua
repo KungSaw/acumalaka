@@ -38,8 +38,8 @@ getgenv().ATConfig = {
     TradeTimeout = false, -- If true, closes game if trade is confirming for more than 150 seconds
 
     AccountFeatures = {
-        ["LeaveServer"] = false, -- Leave server when transfer is completed
-        ["LeaveDelay"] = 120, -- Delay in seconds to wait before leaving
+        ["LeaveServer"] = true, -- Leave server when transfer is completed
+        ["LeaveDelay"] = 20, -- Delay in seconds to wait before leaving
 
         ["Selected Tool"] = "FarmSync", -- "FarmSync" or "FarmersV5"
         ["FarmSync"] = {
