@@ -1,4 +1,6 @@
 getgenv().VO_CONFIG = {
+    -- === HUB / AUTH ===
+    HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     DeviceName = "CRYSTALL",
 
     -- === MAIN FARM (choose one mode) ===
@@ -8,19 +10,19 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false,
     KeepPetFarm = true,
     EggName = {"Egg Name"},
-    PetFarmList = {"Oakee", "Black Tiger", "Kakapo", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
+    PetFarmList = {"Oakee", "Black Tiger", "Camel", "Donkey", "Kakapo", "Mahi Mahi", "Muskrat", "Poodle", "Shih Tzu", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
     PrioritizePet = "2D Kitty",
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg"},
+    CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg", "Admin Abuse Egg"},
     CustomPenPets = {
         "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Corgi",
         "Ginger Cat", "Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca",
         "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra", "Oakee"
+        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra", "Oakee", 
     },
     PrioritizePetPenTypes = {"Egg"},
 
@@ -39,7 +41,13 @@ getgenv().VO_CONFIG = {
         "Tealwood Monster",
         "Oakee Wizard", 
         "General Sheepdog",
-        "Chihuahua"
+        "Chihuahua",
+        "Sunflower Friend",
+        "Violet Friend",
+        "Alicorn",
+        "Ancient Dragon",        
+        "Velocirooster",
+        "Sushi Penguin"        
     },
     ReleaseTypes = {"Neon", "Mega"},
     ReleaseRarities = {},
@@ -53,7 +61,8 @@ getgenv().VO_CONFIG = {
         "Ginger Cat", "Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca",
         "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra"
+        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra",
+        "Gold Mahi Mahi", 
     },
     AgePetsTypes = {"ALL"},
 
@@ -63,7 +72,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Tealwood Monster", "Endangered Egg"},
+    BuyPetName = {"Crystal Egg", "Endangered Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
