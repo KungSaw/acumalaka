@@ -37,6 +37,7 @@ getgenv().VO_CONFIG = {
         "Sushi Penguin",
         "Velocirooster",
         "2D Kitty",
+        "2D Doggy",
         "Rainbow Trout",
         "Tealwood Monster",
         "Oakee Wizard", 
