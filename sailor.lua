@@ -1,40 +1,88 @@
+task.wait(10)
+
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     DeviceName = "CRYSTALL",
 
-    -- === MAIN FARM (choose one mode) ===
+    -- === MAIN FARM ===
     PotFarm = true,
     EggFarm = false,
     PetFarm = true,
     KeepEggFarm = false,
     KeepPetFarm = true,
     EggName = {"Egg Name"},
-    PetFarmList = {"Oakee", "Black Tiger", "Camel", "Donkey", "Kakapo", "Mahi Mahi", "Muskrat", "Poodle", "Shih Tzu", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
+
+    PetFarmList = {
+        "California Condor",
+        "Galapagos Sea Lion",
+        "Black Tiger",
+        "Kakapo",
+        "Black Rhino",
+        "Mexican Wolf",
+        "Black-Footed Ferret",
+        "Pangolin"
+    },
+
     PrioritizePet = "2D Kitty",
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg", "Admin Abuse Egg"},
+    CustomPenEggs = {"Endangered Egg", "Admin Abuse Egg"},
+
     CustomPenPets = {
-        "Abyssinian Cat", "Badger", "Black Rhino",
-        "Black-Footed Ferret", "Corgi",
-        "Ginger Cat", "Grinmoire", "Mexican Wolf",
-        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
-        "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra", "Oakee", 
+        "California Condor",
+        "Galapagos Sea Lion",
+        "Black Tiger",
+        "Kakapo",
+        "Black Rhino",
+        "Mexican Wolf",
+        "Black-Footed Ferret",
+        "Pangolin"
     },
-    PrioritizePetPenTypes = {"Egg"},
+
+    PrioritizePetPenTypes = {"Normal"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
-    ReleasePets = {},
+
+    ReleasePets = {
+        -- Neon variants
+        "Neon California Condor",
+        "Neon Galapagos Sea Lion",
+        "Neon Black Tiger",
+        "Neon Kakapo",
+        "Neon Black Rhino",
+        "Neon Mexican Wolf",
+        "Neon Black-Footed Ferret",
+        "Neon Pangolin",
+
+        -- Normal variants
+        "Abyssinian Cat",
+        "Ocelot",
+        "Orangutan",
+        "Parakeet",
+        "Zebra",
+        "Badger",
+        "Corgi",
+        "Ginger Cat",
+        "Grinmoire",
+        "Orca",
+        "Pomeranian",
+        "Ribbon Seal",
+        "Robot",
+        "Starfish",
+        "Swordfish",
+        "Toucan",
+	"Gold Mahi Mahi",
+    },
+
     ExcludeReleasePets = {
-        "Frostbite Bear",
-        "Dragonfruit Fox",
         "Dango Penguins",
+        "Dragonfruit Fox",
         "Silverback Gorilla",
-        "Sushi Penguin",
+        "Chihuahua",
+        "Frostbite Bear",
         "Velocirooster",
         "2D Kitty",
         "2D Doggy",
@@ -42,30 +90,30 @@ getgenv().VO_CONFIG = {
         "Tealwood Monster",
         "Oakee Wizard", 
         "General Sheepdog",
-        "Chihuahua",
         "Sunflower Friend",
         "Violet Friend",
         "Alicorn",
-        "Ancient Dragon",        
-        "Velocirooster",
-        "Sushi Penguin"        
+        "Ancient Dragon",
+        "Sushi Penguin"
     },
-    ReleaseTypes = {"Neon", "Mega"},
+
+    ReleaseTypes = {},
     ReleaseRarities = {},
     ExcludeRarities = {},
 
     -- === AGE PETS ===
     AgePets = true,
+
     AgePetsNames = {
-        "Abyssinian Cat", "Badger", "Black Rhino",
-        "Black-Footed Ferret", "Corgi",
-        "Ginger Cat", "Grinmoire", "Mexican Wolf",
-        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
-        "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra",
-        "Gold Mahi Mahi", 
+        "California Condor",
+        "Galapagos Sea Lion",
+        "Black Tiger",
+        "Kakapo",
+        "Black Rhino",
+        "Mexican Wolf"
     },
-    AgePetsTypes = {"ALL"},
+
+    AgePetsTypes = {"Normal"},
 
     -- === AUTO FUSE ===
     AutoFuse = true,
@@ -73,45 +121,39 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Endangered Egg"},
+    BuyPetName = {"Endangered Egg", "Crystal Egg"},
 
     -- === BOXES ===
-    BuyBoxes = true,
-    BoxName = "2D Box",
-    OpenBoxes = true,
+    BuyBoxes = false,
+    BoxName = "",
+    OpenBoxes = false,
 
     -- === LURE ===
-    BaitName = "Bait Name",
+    BaitName = "",
 
     -- === AUTO TRADE ===
     AutoTrade = false,
-ReceiverUsernames = {
-},
+ReceiverUsernames = {},
+
     TradeItemList = {
         pets = {"Crystal Egg"}
     },
-    TradePetType = {"ALL"},
+
+    TradePetType = {},
 
     -- === CASH TRANSFER ===
     CashTransfer = false,
-    TransferMethods = {"mannequin"},
+    TransferMethods = {},
     TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
-    WebhookEnabled = true,
-    WebhookURL = "https://discord.com/api/webhooks/1422425905464348772/F-Fgz7wWxWP-qk1-c3T4z-N3ePkyEOJ2DhJE-7DDBukhIDokgtI8jqcbILUURveTVPGa",
-    WebhookPets = {
-        "Dragonfruit Fox",
-        "Dango Penguins",
-        "Silverback Gorilla",
-        "Velocirooster",
-        "Sushi Penguin",
-        "Tealwood Monster",
-        "Emberlight",
-        "Rainbow Trout"
-    },
+    WebhookEnabled = false,
+    WebhookURL = "",
+    WebhookPets = {},
 
     ExtraOpti = false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
+))()
