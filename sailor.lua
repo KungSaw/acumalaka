@@ -31,6 +31,7 @@ getgenv().VO_CONFIG = {
     ReleasePets = {},
     ExcludeReleasePets = {
         "Frostbite Bear",
+        "Strawberry Tortle",
         "Dragonfruit Fox",
         "Dango Penguins",
         "Silverback Gorilla",
