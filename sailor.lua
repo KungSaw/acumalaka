@@ -15,7 +15,7 @@ getgenv().VO_CONFIG = {
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg", "Admin Abuse Egg"},
+    CustomPenEggs = {"Endangered Egg", "Cracked Egg", "Starter Egg", "Pet Egg"},
     CustomPenPets = {
         "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Corgi",
@@ -31,7 +31,6 @@ getgenv().VO_CONFIG = {
     ReleasePets = {},
     ExcludeReleasePets = {
         "Frostbite Bear",
-        "Strawberry Tortle",
         "Dragonfruit Fox",
         "Dango Penguins",
         "Silverback Gorilla",
@@ -53,7 +52,7 @@ getgenv().VO_CONFIG = {
     },
     ReleaseTypes = {"Neon", "Mega"},
     ReleaseRarities = {},
-    ExcludeRarities = {},
+    ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
     AgePets = true,
@@ -100,7 +99,7 @@ ReceiverUsernames = {
 
     -- === DISCORD WEBHOOK ===
     WebhookEnabled = true,
-    WebhookURL = "https://discord.com/api/webhooks/1422425905464348772/F-Fgz7wWxWP-qk1-c3T4z-N3ePkyEOJ2DhJE-7DDBukhIDokgtI8jqcbILUURveTVPGa",
+    WebhookURL = "https://discord.com/api/webhooks/1521141072917434370/W3PaD0c85z-OcG65xELZjGlljPOP3OBgZbkvSKK03-OMuXmKTeG4WEJwE-nxbnTIFPuJ",
     WebhookPets = {
         "Dragonfruit Fox",
         "Dango Penguins",
@@ -109,7 +108,8 @@ ReceiverUsernames = {
         "Sushi Penguin",
         "Tealwood Monster",
         "Emberlight",
-        "Rainbow Trout"
+        "Rainbow Trout",
+	"Strawberry Tortle"
     },
 
     ExtraOpti = false
