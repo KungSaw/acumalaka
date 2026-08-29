@@ -2,14 +2,14 @@ getgenv().ATConfig = {
     -- ## General
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     MainAccUsername = {
-        "ELxSaveSaw",
-        "evelynclara22",
-        "clarabelle730",
-        "cinderelasaw1",
-        "doktersaw2",
-        "awiu325",
-        "awi4377",
-        "bontotevelyn"
+        "mrrpacman",
+        "parameter401",
+        "parameter927",
+        "parameter130",
+        "parameter133",
+        "parameter48",
+        "parameter604",
+        "lingg9901"
     },
     PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle"},
     TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
