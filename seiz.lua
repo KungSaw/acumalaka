@@ -9,7 +9,7 @@ getgenv().ATConfig = {
         "parameter133",
         "parameter48",
         "parameter604",
-        "lingg9901"
+        "Lingg9901"
     },
     PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle"},
     TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
