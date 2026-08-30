@@ -59,7 +59,7 @@ getgenv().VO_CONFIG = {
     AgePets = true,
     AgePetsNames = {
         "Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb",
-        "Blue Whale", "Sea Turtle", "Abyssinian Cat", "Badger", "Black Rhino",
+        "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Corgi",
         "Ginger Cat", "Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca",
