@@ -10,7 +10,7 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false,
     KeepPetFarm = true,
     EggName = {"Egg Name"},
-    PetFarmList = {"Blue Whale", "Sea Turtle", "Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb", "Oakee", "Black Tiger", "Camel", "Donkey", "Kakapo", "Mahi Mahi", "Muskrat", "Poodle", "Shih Tzu", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
+    PetFarmList = {"Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb", "Oakee", "Black Tiger", "Camel", "Donkey", "Kakapo", "Mahi Mahi", "Muskrat", "Poodle", "Shih Tzu", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
     PrioritizePet = "2D Kitty",
 
     -- === PET PEN ===
@@ -18,7 +18,7 @@ getgenv().VO_CONFIG = {
     CustomPenEggs = {"Fairytale Egg", "Cracked Egg", "Starter Egg", "Pet Egg"},
     CustomPenPets = {
         "Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb",
-        "Blue Whale", "Sea Turtle", "Abyssinian Cat", "Badger", "Black Rhino",
+        "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Corgi",
         "Ginger Cat", "Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca",
@@ -59,7 +59,7 @@ getgenv().VO_CONFIG = {
     AgePets = true,
     AgePetsNames = {
         "Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb",
-        "Blue Whale", "Sea Turtle", "Abyssinian Cat", "Badger", "Black Rhino",
+        "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Corgi",
         "Ginger Cat", "Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca",
