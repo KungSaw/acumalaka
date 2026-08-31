@@ -44,11 +44,17 @@ getgenv().VO_CONFIG = {
     CustomPenEggs = {"Fairytale Egg"},
 
     CustomPenPets = {
-        -- Ultra-Rare Pet
-        "Black-Footed Ferret",
-		"Pangolin",
-		"Crimson Cape",
-		"Little Lamb",
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
 
         -- Rare Pet
 		"Mexican Wolf",
@@ -56,17 +62,11 @@ getgenv().VO_CONFIG = {
 		"Clumpty",
 		"Granny Wolf",
 
-        -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Common Pet
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion"
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+        "Pangolin",
     },
 
     PrioritizePetPenTypes = {"Egg"},
