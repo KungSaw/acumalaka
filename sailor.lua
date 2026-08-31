@@ -3,33 +3,116 @@ getgenv().VO_CONFIG = {
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     DeviceName = "CRYSTALL",
 
-    -- === MAIN FARM (choose one mode) ===
+    -- === MAIN FARM ===
     PotFarm = true,
     EggFarm = false,
     PetFarm = true,
     KeepEggFarm = false,
     KeepPetFarm = true,
     EggName = {"Egg Name"},
-    PetFarmList = {"Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb", "Oakee", "Black Tiger", "Camel", "Donkey", "Kakapo", "Mahi Mahi", "Muskrat", "Poodle", "Shih Tzu", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
+
+    PetFarmList = {
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+        "Pangolin",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion"
+    },
+
     PrioritizePet = "2D Kitty",
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg", "Cracked Egg", "Starter Egg", "Pet Egg"},
+    CustomPenEggs = {"Fairytale Egg"},
+
     CustomPenPets = {
-        "Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb",
-        "Abyssinian Cat", "Badger", "Black Rhino",
-        "Black-Footed Ferret", "Corgi",
-        "Ginger Cat", "Grinmoire", "Mexican Wolf",
-        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
-        "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra", "Oakee", 
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Pangolin",
+		"Crimson Cape",
+		"Little Lamb",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion"
     },
-    PrioritizePetPenTypes = {"Egg"},
+
+    PrioritizePetPenTypes = {"Normal"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
-    ReleasePets = {},
+
+    ReleasePets = {
+        -- Neon variants
+        "Neon California Condor",
+        "Neon Galapagos Sea Lion",
+        "Neon Black Tiger",
+        "Neon Kakapo",
+        "Neon Black Rhino",
+        "Neon Mexican Wolf",
+        "Neon Black-Footed Ferret",
+        "Neon Pangolin",
+		"Neon Pinkypillar",
+		"Neon Ms. Muffet",
+		"Neon Princess Mare",
+		"Neon Budgie Witch",
+		"Neon Clumpty",
+		"Neon Granny Wolf",
+		"Neon Crimson Cape",
+		"Neon Little Lamb",
+
+        -- Normal variants
+        "Abyssinian Cat",
+        "Ocelot",
+        "Orangutan",
+        "Parakeet",
+        "Zebra",
+        "Badger",
+        "Corgi",
+        "Ginger Cat",
+        "Grinmoire",
+        "Orca",
+        "Pomeranian",
+        "Ribbon Seal",
+        "Robot",
+        "Starfish",
+        "Swordfish",
+        "Toucan",
+		"Gold Mahi Mahi",
+    },
+
     ExcludeReleasePets = {
         "Frostbite Bear",
         "Dragonfruit Fox",
@@ -41,33 +124,55 @@ getgenv().VO_CONFIG = {
         "2D Kitty",
         "Rainbow Trout",
         "Tealwood Monster",
-        "Oakee Wizard", 
+        "Oakee Wizard",
         "General Sheepdog",
         "Chihuahua",
         "Sunflower Friend",
         "Violet Friend",
         "Alicorn",
-        "Ancient Dragon",        
-        "Velocirooster",
-        "Sushi Penguin"        
+        "Ancient Dragon",
+        "Blue Whale",
+        "Sea Turtle",
+        "Dragonfly",
+        "Kiwi Kiwi",
+        "Huntsman Robin",
+        "Three Blind Mice"
     },
+
     ReleaseTypes = {"Neon", "Mega"},
     ReleaseRarities = {},
     ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
     AgePets = true,
+
     AgePetsNames = {
-        "Budgie Witch", "Princess Mare", "Clumpty", "Granny Wolf", "Crimson Cape", "Little Lamb",
-        "Abyssinian Cat", "Badger", "Black Rhino",
-        "Black-Footed Ferret", "Corgi",
-        "Ginger Cat", "Grinmoire", "Mexican Wolf",
-        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
-        "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra",
-        "Gold Mahi Mahi", 
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Pangolin",
+		"Crimson Cape",
+		"Little Lamb",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion"
     },
-    AgePetsTypes = {"ALL"},
+
+    AgePetsTypes = {"Normal"},
 
     -- === AUTO FUSE ===
     AutoFuse = true,
@@ -75,7 +180,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Fairytale Egg"},
+    BuyPetName = {"Fairytale Egg", "Crystal Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
@@ -83,38 +188,31 @@ getgenv().VO_CONFIG = {
     OpenBoxes = true,
 
     -- === LURE ===
-    BaitName = "Bait Name",
+    BaitName = "Ice Soup Bait",
 
     -- === AUTO TRADE ===
     AutoTrade = false,
-ReceiverUsernames = {
-},
+	ReceiverUsernames = {},
+
     TradeItemList = {
         pets = {"Crystal Egg"}
     },
-    TradePetType = {"ALL"},
+
+    TradePetType = {},
 
     -- === CASH TRANSFER ===
     CashTransfer = false,
-    TransferMethods = {"mannequin"},
+    TransferMethods = {},
     TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
-    WebhookEnabled = true,
-    WebhookURL = "https://discord.com/api/webhooks/1521141072917434370/W3PaD0c85z-OcG65xELZjGlljPOP3OBgZbkvSKK03-OMuXmKTeG4WEJwE-nxbnTIFPuJ",
-    WebhookPets = {
-        "Dragonfruit Fox",
-        "Dango Penguins",
-        "Silverback Gorilla",
-        "Velocirooster",
-        "Sushi Penguin",
-        "Tealwood Monster",
-        "Emberlight",
-        "Rainbow Trout",
-	"Strawberry Tortle"
-    },
+    WebhookEnabled = false,
+    WebhookURL = "",
+    WebhookPets = {},
 
     ExtraOpti = false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
+))()
