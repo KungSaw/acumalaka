@@ -69,7 +69,7 @@ getgenv().VO_CONFIG = {
 		"Galapagos Sea Lion"
     },
 
-    PrioritizePetPenTypes = {"Normal"},
+    PrioritizePetPenTypes = {"Egg"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
