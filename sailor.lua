@@ -12,11 +12,17 @@ getgenv().VO_CONFIG = {
     EggName = {"Egg Name"},
 
     PetFarmList = {
-        -- Ultra-Rare Pet
-        "Black-Footed Ferret",
-		"Crimson Cape",
-		"Little Lamb",
-        "Pangolin",
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
 
         -- Rare Pet
 		"Mexican Wolf",
@@ -24,17 +30,11 @@ getgenv().VO_CONFIG = {
 		"Clumpty",
 		"Granny Wolf",
 
-        -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Common Pet
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion"
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+        "Pangolin",
     },
 
     PrioritizePet = "2D Kitty",
@@ -139,7 +139,7 @@ getgenv().VO_CONFIG = {
         "Three Blind Mice"
     },
 
-    ReleaseTypes = {"Neon", "Mega"},
+    ReleaseTypes = {},
     ReleaseRarities = {},
     ExcludeRarities = {"Legendary"},
 
@@ -188,7 +188,7 @@ getgenv().VO_CONFIG = {
     OpenBoxes = true,
 
     -- === LURE ===
-    BaitName = "Ice Soup Bait",
+    BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
     AutoTrade = false,
