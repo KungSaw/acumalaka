@@ -70,6 +70,9 @@ getgenv().VO_CONFIG = {
 		"Crimson Cape",
 		"Little Lamb",
         "Pangolin",
+
+       -- Legendary Pet
+		"Purrowl"
     },
 
     PrioritizePetPenTypes = {"Egg"},
@@ -173,6 +176,10 @@ getgenv().VO_CONFIG = {
 		"Ms. Muffet",
 		"California Condor",
 		"Galapagos Sea Lion"
+
+       -- Legendary Pet
+		"Three Blind Mice",        
+		"Purrowl"
     },
 
     AgePetsTypes = {"Normal"},
