@@ -175,10 +175,9 @@ getgenv().VO_CONFIG = {
 		"Pinkypillar",
 		"Ms. Muffet",
 		"California Condor",
-		"Galapagos Sea Lion"
+		"Galapagos Sea Lion",
 
        -- Legendary Pet
-		"Three Blind Mice",        
 		"Purrowl"
     },
 
