@@ -97,7 +97,6 @@ getgenv().VO_CONFIG = {
 		"Neon Clumpty",
 		"Neon Granny Wolf",
 		"Neon Crimson Cape",
-		"Neon Little Lamb",
 
         -- Normal variants
         "Abyssinian Cat",
