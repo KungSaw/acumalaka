@@ -9,6 +9,7 @@ getgenv().ATConfig = {
         "parameter133",
         "parameter48",
         "parameter604",
+        "zebold2",
         "awi4377",
         "Lingg9901"
     },
