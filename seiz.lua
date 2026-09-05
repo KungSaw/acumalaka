@@ -9,6 +9,7 @@ getgenv().ATConfig = {
         "parameter133",
         "parameter48",
         "parameter604",
+        "awi4377",
         "Lingg9901"
     },
     PetsToTrade = {"Crystal Egg", "Admin Abuse Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Huntsman Robin", "Three Blind Mice"},
