@@ -1,162 +1,226 @@
+getgenv().VO_CONFIG = {
+    -- === HUB / AUTH ===
+    HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
+    DeviceName = "CRYSTALL",
 
+    -- === MAIN FARM ===
+    PotFarm = true,
+    EggFarm = false,
+    PetFarm = true,
+    KeepEggFarm = false,
+    KeepPetFarm = true,
+    EggName = {"Egg Name"},
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/heads/main/game"))()
-_G.FishItConfig = _G.FishItConfig or {
-    ["Fishing"] = {
-        ["Auto Perfect"] = false,
-        ["Random Result"] = false,
+    PetFarmList = {
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
 
-        ["Auto Favorite"] = true,
-        ["Auto Unfavorite"] = false,
-        ["Fish Name"] = {
-            "Sacred Guardian Squid",
-            {Name = "Ruby", Variant = "Gemstone"},
-            {Name = "Eggy Enchant Stone", Variant = ""},
-        },
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
 
-        ["Auto Accept Trade"] = true,
-        ["Auto Friend Request"] = false,
-        ["Auto Egg Exchange"] = false,
-    },
-    ["Auto Trade"] = {
-        ["Enabled"] = true,
-        ["Whitelist Username"] = {"evelynclara22", "mrrpacman", "clarabelle730", "bontotevelyn", "ELxSaveSaw", "graceneonmagic89"},
-        ["Category Fish"] = {
-            "Secret",
-        },
-        ["Fish Name"] = {
-            "",
-            {Name = "Ruby", Variant = "Gemstone"},
-        },
-        ["Item Name"] = {
-            "Evolved Enchant Stone",
-            "Eggy Enchant Stone",
-        },
-    },
-    ["Farm Coin Only"] = {
-        ["Enabled"] = false,
-        ["Target"] = 190000,
-    },
-    ["Selling"] = {
-        ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 50,
-    },
-    ["Doing Quest"] = {
-        ["Auto Ghostfinn Rod"] = true,
-        ["Auto Element Rod"] = true,
-        ["Auto Element Rod 2"] = false,
-        ["Auto Diamond Rod"] = false,
-        ["Unlock Ancient Ruin"] = false,
-        ["Allowed Sacrifice"] = {
-            "King Crab",
-            "Queen Crab",
-            "Bone Whale",
-            "Gladiator Shark",
-            "King Jelly",
-            "Mosasaur Shark",
-        },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Treasure Room",
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
 
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["WebHook"] = {
-    ["Auto Sending"] = true,
-    ["Category"] = {
-        "Secret",
-        {Name = "Ruby", Variant = "Gemstone"},
-    },
-    ["Item Name"] = {
-        "Evolved Enchant Stone",
-    },
-    ["Link Webhook"] = "",
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1472600840018596005/CwgnFtj19DNKVNus0Rkg5ybzUKET4cObpaUFHDpxFkbu2qUK9ugj08BdEoBEUcABpF6i",
-    },
-    ["Weather"] = {
-        ["Auto Buying"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-        ["Weather List"] = {
-            "Wind",
-            "Cloudy",
-            "Storm",
-        },
-    },
-    ["Potions"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["Totems"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Buy List"] = {
-            ["Mutation Totem"] = 100,
-            "Mutation Totem",
-        },
-    },
-    ["Event"] = {
-        ["Start Farm"] = false,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Event List"] = {
-            "Megalodon Hunt",
-        },
-    },
-    ["Enchant"] = {
-        ["Auto Enchant"] = false,
-        ["Roll Enchant"] = false,
-        ["Evolved Roll Enchant"] = false,
-        ["Enchant List"] = {
-            "Reeler II",
-            "Reeler I",
-            "Empowered I",
-            "SECRET Hunter",
-        },
-        ["Second Enchant"] = false,
-        ["Allowed Sacrifice"] = {
-            "Cryoshade Glider",
-            "Giant Squid",
-            "Panther Eel",
-            "King Crab",
-            "Queen Crab",
-        },
-        ["Second Enchant List"] = {
-            "Perfection",
-            "Reeler I",
-            "Empowered I",
-        },
-        ["Minimum Rod"] = "Element Rod",
-    },
-    ["Bait List"] = {
-        ["Auto Buying"] = true,
-        ["Buy List"] = {
-            "Midnight Bait",
-            "Chroma Bait",
-            "Floral Bait",
-            "Singularity Bait",
-        },
-        ["Endgame"] = "Floral Bait",
-    },
-    ["Rod List"] = {
-        ["Auto Buying"] = true,
-        ["Buy List"] = {
-            "Grass Rod",
-            "Midnight Rod",
-            "Astral Rod",
-            "Ares Rod",
-        },
-        ["Location Rods"] = {
-            ["Fisherman Island"] = {"Starter Rod"},
-            ["Tropical Grove"] = {"Grass Rod", "Midnight Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod", "Ares Rod", "Astral Rod"},
-        },
-        ["Endgame"] = "",
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+        "Pangolin",
+
+       -- Legendary Pet 
+		"Purrowl"
     },
 
-    ["ExtremeFpsBoost"] = false,
-    ["UltimatePerformance"] = true,
-    ["Disable3DRender"] = true,
-    ["AutoRemovePlayer"] = true,
+    PrioritizePet = "2D Kitty",
 
-    ["AutoReconnect"] = false,
-    ["HideGUI"] = false,
-    ["EXIT_MAP_IF_DISCONNECT"] = true,
+    -- === PET PEN ===
+    PetPen = true,
+    CustomPenEggs = {"Fairytale Egg"},
+
+    CustomPenPets = {
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+        "Pangolin",
+
+       -- Legendary Pet
+		"Purrowl"
+    },
+
+    PrioritizePetPenTypes = {"Egg"},
+
+    -- === PET RELEASER ===
+    PetReleaser = true,
+
+    ReleasePets = {
+        -- Neon variants
+        "Neon California Condor",
+        "Neon Galapagos Sea Lion",
+        "Neon Black Tiger",
+        "Neon Kakapo",
+        "Neon Black Rhino",
+        "Neon Mexican Wolf",
+        "Neon Black-Footed Ferret",
+        "Neon Pangolin",
+		"Neon Pinkypillar",
+		"Neon Ms. Muffet",
+		"Neon Princess Mare",
+		"Neon Budgie Witch",
+		"Neon Clumpty",
+		"Neon Granny Wolf",
+		"Neon Crimson Cape",
+
+        -- Normal variants
+        "Abyssinian Cat",
+        "Ocelot",
+        "Orangutan",
+        "Parakeet",
+        "Zebra",
+        "Badger",
+        "Corgi",
+        "Ginger Cat",
+        "Grinmoire",
+        "Orca",
+        "Pomeranian",
+        "Ribbon Seal",
+        "Robot",
+        "Starfish",
+        "Swordfish",
+        "Toucan",
+		"Gold Mahi Mahi",
+    },
+
+    ExcludeReleasePets = {
+        "Frostbite Bear",
+        "Dragonfruit Fox",
+        "Dango Penguins",
+        "Silverback Gorilla",
+        "Sushi Penguin",
+        "Velocirooster",
+        "2D Doggy",
+        "2D Kitty",
+        "Rainbow Trout",
+        "Tealwood Monster",
+        "Oakee Wizard",
+        "General Sheepdog",
+        "Chihuahua",
+        "Sunflower Friend",
+        "Violet Friend",
+        "Alicorn",
+        "Ancient Dragon",
+        "Blue Whale",
+        "Sea Turtle",
+        "Dragonfly",
+        "Kiwi Kiwi",
+        "Huntsman Robin",
+        "Three Blind Mice"
+    },
+
+    ReleaseTypes = {},
+    ReleaseRarities = {},
+    ExcludeRarities = {"Legendary"},
+
+    -- === AGE PETS ===
+    AgePets = true,
+
+    AgePetsNames = {
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Pangolin",
+		"Crimson Cape",
+		"Little Lamb",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Legendary Pet
+		"Purrowl"
+    },
+
+    AgePetsTypes = {"Normal"},
+
+    -- === AUTO FUSE ===
+    AutoFuse = true,
+    AutoFuseBlacklist = {},
+
+    -- === BUY PETS ===
+    BuyPets = true,
+    BuyPetName = {"Fairytale Egg", "Crystal Egg"},
+
+    -- === BOXES ===
+    BuyBoxes = true,
+    BoxName = "2D Box",
+    OpenBoxes = true,
+
+    -- === LURE ===
+    BaitName = "ice_dimension_2025_ice_soup_bait",
+
+    -- === AUTO TRADE ===
+    AutoTrade = false,
+	ReceiverUsernames = {},
+
+    TradeItemList = {
+        pets = {"Crystal Egg"}
+    },
+
+    TradePetType = {},
+
+    -- === CASH TRANSFER ===
+    CashTransfer = false,
+    TransferMethods = {},
+    TransferAccount = "",
+
+    -- === DISCORD WEBHOOK ===
+    WebhookEnabled = false,
+    WebhookURL = "",
+    WebhookPets = {},
+
+    ExtraOpti = false
 }
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
+))()
