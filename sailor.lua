@@ -1,5 +1,5 @@
-getgenv().VO_CONFIG = {
 setfpscap(3)
+getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     DeviceName = "CRYSTALL",
