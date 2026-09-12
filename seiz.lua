@@ -12,7 +12,7 @@ getgenv().ATConfig = {
         "parameter133",
         "parameter401"
     },
-    PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Purrowl", "Sushi Penguin", "Blue Whale", "Sea Turtle", "Dango Penguins", "Alicorn", "Diamond Dragon", "Diamond Unicorn", "Golden Dragon", "Golden Unicorn"},
+    PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Purrowl", "Sushi Penguin", "Dango Penguins"},
     TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
     ForceReceiver = false, -- If true, any account the script is executed on will be treated as a receiver
     PreventGameLoad = false,
