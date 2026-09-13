@@ -7,10 +7,9 @@ getgenv().ATConfig = {
         "Kagura1276x",
         "Kimmy126x",
         "Nana89x1",
-        "parameter927",
-        "parameter130",
-        "parameter133",
-        "parameter401"
+        "gemetar551",
+        "kurikan95",
+        "kurikan92"
     },
     PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Sushi Penguin", "Dango Penguins"},
     TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
