@@ -37,7 +37,8 @@ getgenv().VO_CONFIG = {
         "Pangolin",
 
        -- Legendary Pet 
-		"Purrowl"
+		"Purrowl",
+		"Huntsman Robin"
     },
 
     PrioritizePet = "2D Kitty",
