@@ -2,14 +2,24 @@ getgenv().ATConfig = {
     -- ## General
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     MainAccUsername = {
-        "Harith289x",
-        "Julian378x",
-        "Kagura1276x",
-        "Kimmy126x",
-        "Nana89x1",
-        "gemetar551",
-        "kurikan95",
-        "kurikan92"
+        "SkycluuubPlayz2011",
+        "mooozeAvaRBX",
+        "Chl0edrawsTV",
+        "Cal3bblox72",
+        "SharIssabellacraftsT",
+        "fuzzyPix3llun4",
+        "PlayzemberGuppy62",
+        "lilChloecrewrrex",
+        "lun4creates73",
+        "AvaDrawsPlayz99",
+        "turbodragonboyBllox2",
+        "echoDDolphinRBX2007",
+        "SirZoeClanrbxari",
+        "cosmicAid3nnation65",
+        "Lucas4ricr3wYT",
+        "Gold3nLeoplays",
+        "aru5H5ahu_31",
+        "sUNny365FAlCOnkID"
     },
     PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Sushi Penguin", "Dango Penguins"},
     TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
