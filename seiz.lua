@@ -19,6 +19,12 @@ getgenv().ATConfig = {
         "Lucas4ricr3wYT",
         "Gold3nLeoplays",
         "aru5H5ahu_31",
+        "silentFrostMegaHouse",
+        "Sunny453EverrSloth",
+        "kAIwAlkerzAnE",
+        "FroztDrewrblx",
+        "AuroraBriar160861",
+        "AceTiger186",
         "sUNny365FAlCOnkID"
     },
     PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Sushi Penguin", "Dango Penguins"},
