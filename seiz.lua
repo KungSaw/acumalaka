@@ -27,7 +27,7 @@ getgenv().ATConfig = {
         "AceTiger186",
         "sUNny365FAlCOnkID"
     },
-    PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Sushi Penguin", "Dango Penguins", "Huntsman Robin"},
+    PetsToTrade = {"Crystal Egg", "2D Doggy", "2D Kitty", "Dragonfruit Fox", "Velocirooster", "Chihuahua", "Strawberry Tortle", "Three Blind Mice", "Sushi Penguin", "Dango Penguins"},
     TradePetType = {"ALL"}, -- Choose any combination: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG"
     ForceReceiver = false, -- If true, any account the script is executed on will be treated as a receiver
     PreventGameLoad = false,
@@ -54,7 +54,7 @@ getgenv().ATConfig = {
     TradeTimeout = false, -- If true, closes game if trade is confirming for more than 150 seconds
 
     AccountFeatures = {
-        ["LeaveServer"] = true, -- Leave server when transfer is completed
+        ["LeaveServer"] = false, -- Leave server when transfer is completed
         ["LeaveDelay"] = 20, -- Delay in seconds to wait before leaving
 
         ["Selected Tool"] = "FarmSync", -- "FarmSync" or "FarmersV5"
