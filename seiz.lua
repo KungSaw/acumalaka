@@ -25,7 +25,7 @@ getgenv().ATConfig = {
         "FroztDrewrblx",
         "AuroraBriar160861",
         "AceTiger186",
-        "sUNny365FAlCOnkID"
+        "sUNny365FAlCOnkID",
         "giogio00774",
         "kiyzmancing3",
         "xDrexsboy151",
