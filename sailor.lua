@@ -215,11 +215,11 @@ getgenv().VO_CONFIG = {
     BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
-    AutoTrade = false,
-	ReceiverUsernames = {},
+    AutoTrade = true,
+	ReceiverUsernames = {"ViralY1BoltA200643", "SnareqyPowerw199329", "PrimalM2CyberM28", "StormChas3rNVWarprVH", "Pixelated1CMiner6200", "Hunter6cNovaFcLucky", "Wardenq0Toxicp199945", "TwilightHWProC1998"},
 
     TradeItemList = {
-        pets = {"Crystal Egg"}
+        pets = {"Crystal Egg", "Three Blind Mice"}
     },
 
     TradePetType = {},
@@ -240,3 +240,4 @@ getgenv().VO_CONFIG = {
 loadstring(game:HttpGet(
     "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
 ))()
+
