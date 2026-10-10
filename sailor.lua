@@ -13,6 +13,7 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
      -- Common Pet
+		"Jacobin Pigeon",
 		"Pinkypillar",
 		"Ms. Muffet",
 		"California Condor",
@@ -37,11 +38,19 @@ getgenv().VO_CONFIG = {
         "Pangolin",
 
        -- Legendary Pet 
-		"Purrowl",
-		"Huntsman Robin"
+		"Purrowl"
     },
 
     PrioritizePet = "2D Kitty",
+	
+	   -- === HALLOWEEN 2026 EVENT ===
+    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
+    AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
+    AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
+    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
+    GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
+	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+
 
     -- === PET PEN ===
     PetPen = true,
@@ -49,6 +58,7 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
      -- Common Pet
+		"Jacobin Pigeon",
 		"Pinkypillar",
 		"Ms. Muffet",
 		"California Condor",
@@ -76,20 +86,14 @@ getgenv().VO_CONFIG = {
 		"Purrowl"
     },
 
-    PrioritizePetPenTypes = {"Egg"},
-
-    	   -- === HALLOWEEN 2026 EVENT ===
-    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
-    AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
-    AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
-    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
-    GhostClustersMinigame = false,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
+    PrioritizePetPenTypes = {"Neon"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
 
     ReleasePets = {
         -- Neon variants
+		"Mega Jacobin Pigeon",
         "Neon California Condor",
         "Neon Galapagos Sea Lion",
         "Neon Black Tiger",
@@ -105,7 +109,6 @@ getgenv().VO_CONFIG = {
 		"Neon Clumpty",
 		"Neon Granny Wolf",
 		"Neon Crimson Cape",
-		"Neon Little Lamb",
 
         -- Normal variants
         "Abyssinian Cat",
@@ -162,6 +165,7 @@ getgenv().VO_CONFIG = {
 
     AgePetsNames = {
         -- Ultra-Rare Pet
+		"Jacobin Pigeon",
         "Black-Footed Ferret",
 		"Pangolin",
 		"Crimson Cape",
@@ -198,6 +202,10 @@ getgenv().VO_CONFIG = {
     -- === BUY PETS ===
     BuyPets = true,
     BuyPetName = {"Fairytale Egg", "Crystal Egg", "Jacobin Pigeon"},
+	
+	-- === STAR REWARDS SHOP ===
+    BuyStarRewards = false,
+    StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
@@ -227,7 +235,7 @@ getgenv().VO_CONFIG = {
     WebhookURL = "",
     WebhookPets = {},
 
-    ExtraOpti = false
+    ExtraOpti = true
 }
 
 loadstring(game:HttpGet(
