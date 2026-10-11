@@ -219,7 +219,7 @@ getgenv().VO_CONFIG = {
 	ReceiverUsernames = {"ViralY1BoltA200643", "SnareqyPowerw199329", "PrimalM2CyberM28", "StormChas3rNVWarprVH", "Pixelated1CMiner6200", "Hunter6cNovaFcLucky", "Wardenq0Toxicp199945", "TwilightHWProC1998"},
 
     TradeItemList = {
-        pets = {"Crystal Egg", "Three Blind Mice"}
+        pets = {"Crystal Egg", "Three Blind Mice", "Mega Jacobin Pigeon"}
     },
 
     TradePetType = {},
