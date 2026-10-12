@@ -45,9 +45,6 @@ getgenv().VO_CONFIG = {
 	
 	   -- === HALLOWEEN 2026 EVENT ===
     AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
-    AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
-    AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
-    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
     GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
 	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
 
@@ -200,10 +197,10 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Jacobin Pigeon"},
+    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Skelicorn"},
 	
 	-- === STAR REWARDS SHOP ===
-    BuyStarRewards = false,
+    BuyStarRewards = true,
     StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
@@ -216,10 +213,10 @@ getgenv().VO_CONFIG = {
 
     -- === AUTO TRADE ===
     AutoTrade = true,
-	ReceiverUsernames = {"ViralY1BoltA200643", "SnareqyPowerw199329", "PrimalM2CyberM28", "StormChas3rNVWarprVH", "Pixelated1CMiner6200", "Hunter6cNovaFcLucky", "Wardenq0Toxicp199945", "TwilightHWProC1998"},
+	ReceiverUsernames = {"laptopgod2020", "jessbenkoontop"},
 
     TradeItemList = {
-        pets = {"Crystal Egg", "Three Blind Mice", "Mega Jacobin Pigeon"}
+        pets = {"Crystal Egg", "Admin Abuse Egg"}
     },
 
     TradePetType = {},
@@ -240,4 +237,3 @@ getgenv().VO_CONFIG = {
 loadstring(game:HttpGet(
     "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
 ))()
-
