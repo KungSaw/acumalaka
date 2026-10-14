@@ -90,6 +90,7 @@ getgenv().VO_CONFIG = {
 
     ReleasePets = {
         -- Neon variants
+		"Mega Jacobin Pigeon",
         "Neon California Condor",
         "Neon Galapagos Sea Lion",
         "Neon Black Tiger",
