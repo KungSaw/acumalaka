@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
-    DeviceName = "CRYSTALL",
+    DeviceName = "titit",
 
     -- === MAIN FARM ===
     PotFarm = true,
@@ -38,15 +38,21 @@ getgenv().VO_CONFIG = {
         "Pangolin",
 
        -- Legendary Pet 
-		"Purrowl"
+		"Purrowl",
+        "Skelicorn"
     },
 
     PrioritizePet = "2D Kitty",
 	
 	   -- === HALLOWEEN 2026 EVENT ===
     AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
+    AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
+    AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
+    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
     GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
 	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
+
 
 
     -- === PET PEN ===
@@ -80,7 +86,8 @@ getgenv().VO_CONFIG = {
         "Pangolin",
 
        -- Legendary Pet
-		"Purrowl"
+		"Purrowl",
+        
     },
 
     PrioritizePetPenTypes = {"Neon"},
@@ -90,7 +97,6 @@ getgenv().VO_CONFIG = {
 
     ReleasePets = {
         -- Neon variants
-		"Mega Jacobin Pigeon",
         "Neon California Condor",
         "Neon Galapagos Sea Lion",
         "Neon Black Tiger",
@@ -125,6 +131,8 @@ getgenv().VO_CONFIG = {
         "Swordfish",
         "Toucan",
 		"Gold Mahi Mahi",
+        "Mummy Spider",
+        "Jacobin Pigeon"
     },
 
     ExcludeReleasePets = {
@@ -150,7 +158,9 @@ getgenv().VO_CONFIG = {
         "Dragonfly",
         "Kiwi Kiwi",
         "Huntsman Robin",
-        "Three Blind Mice"
+        "Three Blind Mice",
+        "Skelicorn",
+        "Stitches"
     },
 
     ReleaseTypes = {},
@@ -187,7 +197,7 @@ getgenv().VO_CONFIG = {
 		"Galapagos Sea Lion",
 
        -- Legendary Pet
-		"Purrowl"
+		"Three Blind Mice"
     },
 
     AgePetsTypes = {"Normal"},
@@ -198,10 +208,10 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Skelicorn"},
+    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Stitches"},
 	
 	-- === STAR REWARDS SHOP ===
-    BuyStarRewards = true,
+    BuyStarRewards = false,
     StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
@@ -213,11 +223,11 @@ getgenv().VO_CONFIG = {
     BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
-    AutoTrade = true,
-	ReceiverUsernames = {"laptopgod2020", "jessbenkoontop"},
+    AutoTrade = false,
+	ReceiverUsernames = {"ViralY1BoltA200643", "SnareqyPowerw199329", "PrimalM2CyberM28", "StormChas3rNVWarprVH", "Pixelated1CMiner6200", "Hunter6cNovaFcLucky", "Wardenq0Toxicp199945", "TwilightHWProC1998"},
 
     TradeItemList = {
-        pets = {"Crystal Egg", "Admin Abuse Egg"}
+        pets = {"Crystal Egg", "Three Blind Mice"}
     },
 
     TradePetType = {},
