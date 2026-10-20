@@ -51,7 +51,7 @@ getgenv().VO_CONFIG = {
     AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
     GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
 	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
-    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
+    SpotlightMinigame = false,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
 
 
 
