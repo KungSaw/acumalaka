@@ -5,11 +5,11 @@ getgenv().ATConfig = {
         "Takara478144",
         "Vadim770603",
         "Vedika248566",
-        "Edgard691249",
+        "cinta89995",
         "Olivie328153",
         "Philom185701",
         "Nessie798507",
-        "Rohan451397",
+        "hinge59404",
         "AvaDrawsPlayz99",
         "turbodragonboyBllox2"
     },
