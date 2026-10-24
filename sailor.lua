@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
-    DeviceName = "KONTOl",
+    DeviceName = "skelicrot",
 
     -- === MAIN FARM ===
     PotFarm = true,
@@ -13,7 +13,8 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
      -- Common Pet
-		"Jacobin Pigeon",
+		"Mummy Spider",
+      "Skelicorn",
 		"Pinkypillar",
 		"Ms. Muffet",
 		"California Condor",
@@ -48,7 +49,7 @@ getgenv().VO_CONFIG = {
     AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
     AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
     AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
-    AutoPigeonNest = false,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
+    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
     GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
 	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
     SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
@@ -61,6 +62,8 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
      -- Common Pet
+      "Mummy Spider",
+      "Skelicorn",
 		"Jacobin Pigeon",
 		"Pinkypillar",
 		"Ms. Muffet",
@@ -90,7 +93,7 @@ getgenv().VO_CONFIG = {
         
     },
 
-    PrioritizePetPenTypes = {"Neon"},
+    PrioritizePetPenTypes = {"Normal"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
@@ -112,6 +115,7 @@ getgenv().VO_CONFIG = {
 		"Neon Clumpty",
 		"Neon Granny Wolf",
 		"Neon Crimson Cape",
+      "Neon Mummy Spider",
 
         -- Normal variants
         "Abyssinian Cat",
@@ -130,9 +134,7 @@ getgenv().VO_CONFIG = {
         "Starfish",
         "Swordfish",
         "Toucan",
-		"Gold Mahi Mahi",
-        "Mummy Spider",
-        "Jacobin Pigeon"
+		"Gold Mahi Mahi"
     },
 
     ExcludeReleasePets = {
@@ -160,7 +162,7 @@ getgenv().VO_CONFIG = {
         "Huntsman Robin",
         "Three Blind Mice",
         "Skelicorn",
-        "Stray Cat Dragon"
+        "Stitches"
     },
 
     ReleaseTypes = {},
@@ -172,6 +174,8 @@ getgenv().VO_CONFIG = {
 
     AgePetsNames = {
         -- Ultra-Rare Pet
+       "Mummy Spider",
+      "Skelicorn",
 		"Jacobin Pigeon",
         "Black-Footed Ferret",
 		"Pangolin",
@@ -211,7 +215,7 @@ getgenv().VO_CONFIG = {
     BuyPetName = {"Fairytale Egg", "Crystal Egg", "Stray Cat Dragon"},
 	
 	-- === STAR REWARDS SHOP ===
-    BuyStarRewards = false,
+    BuyStarRewards = true,
     StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
