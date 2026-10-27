@@ -2,14 +2,14 @@ getgenv().ATConfig = {
     -- ## General
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
     MainAccUsername = {
-        "Takara478144",
-        "Vadim770603",
-        "Vedika248566",
-        "cinta89995",
-        "Olivie328153",
-        "Philom185701",
-        "Nessie798507",
-        "hinge59404",
+        "kungsawvip",
+        "kungsawvip2",
+        "kungsawvip3",
+        "kungsawvip4",
+        "kungsawvip5",
+        "kungsawvip6",
+        "kungsawvip7",
+        "kungsawvip8",
         "AvaDrawsPlayz99",
         "turbodragonboyBllox2"
     },
