@@ -12,14 +12,6 @@ getgenv().VO_CONFIG = {
     KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
     PetFarmList = {
-        "Neon Pinkypillar",
-        "Neon Ms. Muffet",
-        "Neon Budgie Witch",
-        "Neon Princess Mare",
-        "Neon Clumpty",
-        "Neon Granny Wolf",
-        "Neon Little Lamb",
-        "Neon Crimson Cape",
         "Normal Pinkypillar",
         "Normal Ms. Muffet",
         "Normal Budgie Witch",
@@ -42,14 +34,6 @@ getgenv().VO_CONFIG = {
     PetPen = true,
     CustomPenEggs = {"Fairytale Egg"},
     CustomPenPets = {
-        "Neon Pinkypillar",
-        "Neon Ms. Muffet",
-        "Neon Budgie Witch",
-        "Neon Princess Mare",
-        "Neon Clumpty",
-        "Neon Granny Wolf",
-        "Neon Little Lamb",
-        "Neon Crimson Cape",
         "Normal Pinkypillar",
         "Normal Ms. Muffet",
         "Normal Budgie Witch",
@@ -59,7 +43,7 @@ getgenv().VO_CONFIG = {
         "Normal Little Lamb",
         "Normal Crimson Cape"
     },
-    PrioritizePetPenTypes = {"Egg", "Neon", "Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
+    PrioritizePetPenTypes = {"Egg", "Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
     PetReleaser = true,
@@ -74,7 +58,7 @@ getgenv().VO_CONFIG = {
         "Crimson Cape"
     },       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {"Mega"},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleaseTypes = {"Neon"},      -- "Mega", "Neon", "Normal" (empty = all)
     ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
     ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
@@ -88,7 +72,7 @@ getgenv().VO_CONFIG = {
         "Little Lamb",
         "Crimson Cape"
     },
-    AgePetsTypes = {"Neon"},  -- "Normal", "Neon", "ALL"
+    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
     AutoFuse = true,
