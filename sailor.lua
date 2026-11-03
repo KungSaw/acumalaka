@@ -1,85 +1,94 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
-    DeviceName = "telur enak",
+    DeviceName = "VPS",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
     EggFarm = false,
     PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
+    EggBuy = true, -- If true (default): buy an egg when none in inventory. If false: no target eggs -> switch to PotFarm
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
-    PrioritizePet = "",
-
-    -- === PET PEN ===
-    PetPen = true,
-    CustomPenEggs = {"Fairytale Egg"},
-    CustomPenPets = {"Normal Ant", "Normal Mouse"},
-    PrioritizePetPenTypes = {"Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
-
-    -- === HALLOWEEN 2026 EVENT ===
-    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
-    AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
-    AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
-    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
-    GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
-	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
-
-    -- === PET RELEASER ===
-    PetReleaser = true,
-    ReleasePets = {
-        "Neon Ant",
-        "Neon Mouse",
-        "Normal Camel",
-        "Normal Donkey",
-        "Normal Poodle",
-        "Normal Orangutan",
-        "Normal Parakeet",
-        "Normal Zebra",
-        "Normal Corgi",
-        "Normal Robot",
-        "Normal Swordfish",
-        "Normal Alicorn",
-        "Normal Ancient Dragon",
-        "Normal Dragonfly",
+    PetFarmList = {
+        "Neon Pinkypillar",
+        "Neon Ms. Muffet",
+        "Neon Budgie Witch",
+        "Neon Princess Mare",
+        "Neon Clumpty",
+        "Neon Granny Wolf",
+        "Neon Little Lamb",
+        "Neon Crimson Cape",
         "Normal Pinkypillar",
         "Normal Ms. Muffet",
         "Normal Budgie Witch",
         "Normal Princess Mare",
         "Normal Clumpty",
         "Normal Granny Wolf",
-        "Normal Crimson Cape",
         "Normal Little Lamb",
-        "Normal Bolt",
-        "Normal Caramelgeist",
-        "Normal Bobageist",
-        "Normal Bubblegeist",
-        "Normal Mummy Spider",
-        "Normal Jacobin Pigeon",
-        "Normal Jumpscare",
-        "Normal Huntsman Robin",
-        "Normal Three Blind Mice",
-        "Pandaguin Glooptodog"
+        "Normal Crimson Cape"
+    },
+    Farm2DEvent = true,
+    PrioritizePet = "2D Kitty",
+
+    -- === HALLOWEEN 2026 EVENT ===
+    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
+    GhostClustersMinigame = true,     -- Ghost Gallery minigame (on unless set to false; farm tasks pause while it runs; drops Crypt Keys)
+    HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
+
+    -- === PET PEN ===
+    PetPen = true,
+    CustomPenEggs = {"Fairytale Egg"},
+    CustomPenPets = {
+        "Neon Pinkypillar",
+        "Neon Ms. Muffet",
+        "Neon Budgie Witch",
+        "Neon Princess Mare",
+        "Neon Clumpty",
+        "Neon Granny Wolf",
+        "Neon Little Lamb",
+        "Neon Crimson Cape",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet",
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Clumpty",
+        "Normal Granny Wolf",
+        "Normal Little Lamb",
+        "Normal Crimson Cape"
+    },
+    PrioritizePetPenTypes = {"Egg", "Neon", "Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
+
+    -- === PET RELEASER ===
+    PetReleaser = true,
+    ReleasePets = {
+        "Pinkypillar",
+        "Ms. Muffet",
+        "Budgie Witch",
+        "Princess Mare",
+        "Clumpty",
+        "Granny Wolf",
+        "Little Lamb",
+        "Crimson Cape"
     },       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {
-        "Skelicorn",
-        "Stray Cat Dragon"
-    }, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {"Normal", "Neon"},      -- "Mega", "Neon", "Normal" (empty = all)
+    ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
+    ReleaseTypes = {"Mega"},      -- "Mega", "Neon", "Normal" (empty = all)
     ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = { 
-        "Normal Ant",
-        "Normal Mouse"
+    AgePetsNames = {
+        "Budgie Witch",
+        "Princess Mare",
+        "Clumpty",
+        "Granny Wolf",
+        "Little Lamb",
+        "Crimson Cape"
     },
-    AgePetsTypes = {
-        "Normal"
-    },  -- "Normal", "Neon", "ALL"
+    AgePetsTypes = {"Neon"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
     AutoFuse = true,
@@ -87,10 +96,10 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Jacobin Pigeon"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Crystal Egg", "Skelicorn", "Fairytale Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === STAR REWARDS SHOP ===
-    BuyStarRewards = false,
+    BuyStarRewards = true,
     StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
@@ -99,13 +108,29 @@ getgenv().VO_CONFIG = {
     OpenBoxes = {"Box Name"}, -- Box names to open from inventory
 
     -- === LURE ===
-    BaitName = "ice_dimension_2025_ice_soup_bait",
+    BaitName = "Bait Name",
 
     -- === AUTO TRADE ===
-    AutoTrade = false,
-    ReceiverUsernames = {"tmroc7c07y"},
+    AutoTrade = true,
+    ReceiverUsernames = {
+        "aaxstore10001",
+        "RahmatRacing7791",
+        "DadangSusanto9136",
+        "AsepKnalpot6290",
+        "RiniSekar2088",
+        "JuanSitorus5190",
+        "DedeGunawan4711",
+        "RatnaYuki3619",
+        "YantoBeni8801",
+        "Tukimen9164",
+        "Sarimi5183",
+        "Kukumi7260",
+        "Ruzuka9148",
+        "Jajang7709",
+        "Sendy5193"
+    },
     TradeItemList = {
-         pets = {"Crystal Egg"}
+        pets = {"Crystal Egg", "Skelicorn", "Three Blind Mice", "Admin Abuse Egg"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
     TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
 
@@ -116,15 +141,15 @@ getgenv().VO_CONFIG = {
 
     -- === DISCORD WEBHOOK ===
     WebhookEnabled = false,
-    WebhookURL = "https://discord.com/api/webhooks/1554752691559862302/dT9FEpxL-TbNfTnhcK7Tn-hOP4yKpEcvQq0s9U3wYmvSFWbYK5qWJfoQ3wWVTdlFrNgY",
-    WebhookPets = {"Stray Cat Dragon"},  -- Pet names to send (empty = all)
+    WebhookURL = "",
+    WebhookPets = {},  -- Pet names to send (empty = all)
 
     -- === ACCOUNT FEATURES (stop when Conditions met; FarmSync / FarmersV5 only) ===
     AccountFeatures = {
         Enabled = false,
         RequireAll = true, -- true = AND all conditions; false = OR any one
         Conditions = {
-            -- { Type = "PetCount", PetName = "Mega Dog", MinCount = 16 },
+            -- { Type = "PetCount", PetName = "Mega Neon Dog", MinCount = 16 },
             -- { Type = "Currency", Currency = "money", MinAmount = 100000 },
             -- { Type = "SessionMinutes", MinMinutes = 180 },
         },
