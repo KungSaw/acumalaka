@@ -95,7 +95,7 @@ getgenv().VO_CONFIG = {
     BaitName = "Bait Name",
 
     -- === AUTO TRADE ===
-    AutoTrade = true,
+    AutoTrade = false,
     ReceiverUsernames = {
         "aaxstore10001",
         "RahmatRacing7791",
