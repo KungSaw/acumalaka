@@ -24,12 +24,6 @@ getgenv().VO_CONFIG = {
     Farm2DEvent = true,
     PrioritizePet = "2D Kitty",
 
-    -- === HALLOWEEN 2026 EVENT ===
-    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
-    GhostClustersMinigame = true,     -- Ghost Gallery minigame (on unless set to false; farm tasks pause while it runs; drops Crypt Keys)
-    HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
-    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
-
     -- === PET PEN ===
     PetPen = true,
     CustomPenEggs = {"Fairytale Egg"},
@@ -80,7 +74,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Skelicorn", "Fairytale Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Crystal Egg", "Fairytale Egg", "Skelicorn"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,
@@ -97,21 +91,11 @@ getgenv().VO_CONFIG = {
     -- === AUTO TRADE ===
     AutoTrade = false,
     ReceiverUsernames = {
-        "aaxstore10001",
-        "RahmatRacing7791",
-        "DadangSusanto9136",
-        "AsepKnalpot6290",
-        "RiniSekar2088",
-        "JuanSitorus5190",
-        "DedeGunawan4711",
-        "RatnaYuki3619",
-        "YantoBeni8801",
-        "Tukimen9164",
-        "Sarimi5183",
-        "Kukumi7260",
-        "Ruzuka9148",
-        "Jajang7709",
-        "Sendy5193"
+        "tabahstore06",
+        "tabahstore07",
+        "tabahstore08",
+        "tabahstore09",
+        "tabahstore10"
     },
     TradeItemList = {
         pets = {"Crystal Egg", "Skelicorn", "Three Blind Mice", "Admin Abuse Egg"}
