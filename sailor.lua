@@ -1,71 +1,40 @@
+task.wait(3)
+
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
-    DeviceName = "VPS",
+    DeviceName = "PENTIL",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
-    EggFarm = false,
-    PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
+    PotFarm = false,
+    EggFarm = true,
+    PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     EggBuy = true, -- If true (default): buy an egg when none in inventory. If false: no target eggs -> switch to PotFarm
-    KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
-    KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {
-        "Normal Pinkypillar",
-        "Normal Ms. Muffet",
-        "Normal Budgie Witch",
-        "Normal Princess Mare",
-        "Normal Clumpty",
-        "Normal Granny Wolf",
-        "Normal Little Lamb",
-        "Normal Crimson Cape"
-    },
+    KeepEggFarm = true, -- If true, will keep trying to hatch eggs even when no bucks
+    KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
+    EggName = {"Cracked Egg", "Admin Abuse Egg"},  -- Target egg for Unicorn chance
+    PetFarmList = {},
     Farm2DEvent = true,
     PrioritizePet = "2D Kitty",
 
+
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg"},
-    CustomPenPets = {
-        "Normal Pinkypillar",
-        "Normal Ms. Muffet",
-        "Normal Budgie Witch",
-        "Normal Princess Mare",
-        "Normal Clumpty",
-        "Normal Granny Wolf",
-        "Normal Little Lamb",
-        "Normal Crimson Cape"
-    },
-    PrioritizePetPenTypes = {"Egg", "Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
+    CustomPenEggs = {"Cracked Egg", "Admin Abuse Egg"},
+    CustomPenPets = {},
+    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
     PetReleaser = true,
-    ReleasePets = {
-        "Pinkypillar",
-        "Ms. Muffet",
-        "Budgie Witch",
-        "Princess Mare",
-        "Clumpty",
-        "Granny Wolf",
-        "Little Lamb",
-        "Crimson Cape"
-    },       -- Whitelist: names to release (empty = all)
+    ReleasePets = {},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {"Neon"},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare", "Legendary"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
-    AgePets = true,
-    AgePetsNames = {
-        "Budgie Witch",
-        "Princess Mare",
-        "Clumpty",
-        "Granny Wolf",
-        "Little Lamb",
-        "Crimson Cape"
-    },
+    AgePets = false,
+    AgePetsNames = {},
     AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
@@ -74,11 +43,11 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Fairytale Egg", "Skelicorn"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Cracked Egg", "Crystal Egg"},  -- Buy Crystal Eggs first, then Retired Eggs
 
     -- === STAR REWARDS SHOP ===
-    BuyStarRewards = true,
-    StarRewardBuyList = {"Gemstone Egg"},
+    BuyStarRewards = false,
+    StarRewardBuyList = {},
 
     -- === BOXES ===
     BuyBoxes = false,
@@ -86,20 +55,14 @@ getgenv().VO_CONFIG = {
     OpenBoxes = {"Box Name"}, -- Box names to open from inventory
 
     -- === LURE ===
-    BaitName = "Cyclone Sponge Bait", -- "Storm Chip Cookie Bait" or "Cyclone Sponge Bait"
+    BaitName = "Cyclone Sponge Bait",
     LightningFarm = true,
 
     -- === AUTO TRADE ===
-    AutoTrade = true,
-    ReceiverUsernames = {
-        "tabahstore06",
-        "tabahstore07",
-        "tabahstore08",
-        "tabahstore09",
-        "tabahstore10"
-    },
+    AutoTrade = false,
+    ReceiverUsernames = {},
     TradeItemList = {
-        pets = {"Crystal Egg", "Skelicorn", "Three Blind Mice", "Admin Abuse Egg"}
+        pets = {"Crystal Egg"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
     TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
 
