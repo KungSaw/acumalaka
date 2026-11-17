@@ -1,42 +1,83 @@
-task.wait(3)
-
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cN971JQ7GqrYR_pdP3yP-QGgsWhTISQh0Ns0XK9Rr5c",
-    DeviceName = "EGG",
+    DeviceName = "BERTAHAN",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = false,
-    EggFarm = true,
-    PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
+    PotFarm = true,
+    EggFarm = false,
+    PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     EggBuy = true, -- If true (default): buy an egg when none in inventory. If false: no target eggs -> switch to PotFarm
-    KeepEggFarm = true, -- If true, will keep trying to hatch eggs even when no bucks
-    KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Cracked Egg", "Admin Abuse Egg", "Fairytale Egg"},  -- Target egg for Unicorn chance
-    PetFarmList = {},
+    KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
+    KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
+    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
+    PetFarmList = {
+	"Normal Mummy Spider",
+        "Normal Clumpty",
+        "Normal Granny Wolf",
+        "Normal Little Lamb",
+        "Normal Crimson Cape",
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet"
+    },
     Farm2DEvent = true,
     PrioritizePet = "2D Kitty",
 
+    -- === HALLOWEEN 2026 EVENT ===
+    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
+    GhostClustersMinigame = true,     -- Ghost Gallery minigame (on unless set to false; farm tasks pause while it runs; drops Crypt Keys)
+    HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Cracked Egg", "Admin Abuse Egg", "Fairytale Egg"},
-    CustomPenPets = {},
-    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
+    CustomPenEggs = {"Fairytale Egg"},
+    CustomPenPets = {
+	"Normal Mummy Spider",
+        "Normal Clumpty",
+        "Normal Granny Wolf",
+        "Normal Little Lamb",
+        "Normal Crimson Cape",
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet"
+    },
+    PrioritizePetPenTypes = {"Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
     PetReleaser = true,
-    ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {
-        "Haetyphoon"
-    }, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare", "Legendary"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    ReleasePets = {
+	"Mummy Spider",
+        "Pinkypillar",
+        "Ms. Muffet",
+        "Budgie Witch",
+        "Princess Mare",
+        "Clumpty",
+        "Granny Wolf",
+        "Little Lamb",
+        "Crimson Cape"
+    },       -- Whitelist: names to release (empty = all)
+    ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
+    ReleaseTypes = {"Neon"},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
-    AgePets = false,
-    AgePetsNames = {},
+    AgePets = true,
+    AgePetsNames = {
+	"Normal Mummy Spider",
+        "Normal Clumpty",
+        "Normal Granny Wolf",
+        "Normal Little Lamb",
+        "Normal Crimson Cape",
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet"
+    },
     AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
@@ -45,11 +86,11 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Cracked Egg", "Fairytale Egg", "Crystal Egg"},  -- Buy Crystal Eggs first, then Retired Eggs
+    BuyPetName = {"Crystal Egg", "Skelicorn", "Fairytale Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === STAR REWARDS SHOP ===
-    BuyStarRewards = false,
-    StarRewardBuyList = {},
+    BuyStarRewards = true,
+    StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
     BuyBoxes = false,
@@ -62,9 +103,12 @@ getgenv().VO_CONFIG = {
 
     -- === AUTO TRADE ===
     AutoTrade = false,
-    ReceiverUsernames = {},
+    ReceiverUsernames = {
+        "gondre002",
+        "jessehu99",
+    },
     TradeItemList = {
-        pets = {"Crystal Egg"}
+        pets = {"Crystal Egg", "Admin Abuse Egg", "Huntsman Robin", "Three Blind Mice", "Stray Cat Dragon", "Purrowl", "2D Doggy", "2D Kitty", "Haetyphoon", "Sushi Penguin"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
     TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
 
