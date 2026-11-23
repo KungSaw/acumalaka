@@ -45,7 +45,7 @@ getgenv().VO_CONFIG = {
         "Normal Pinkypillar",
         "Normal Ms. Muffet"
     },
-    PrioritizePetPenTypes = {"Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
+    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
     PetReleaser = true,
